@@ -1,14 +1,24 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:http/http.dart' as http;
+
 import '../configs/app_urls.dart';
 
-Future<String> getResponse({required String url}) async {
+Future<String> getResponse({
+  required String url,
+  // required String token,
+}) async {
   Uri uriUrl = Uri.parse(url);
+
+  final Map<String, String> header = {
+    "Content-Type": "application/json",
+    // 'Authorization': 'Bearer $token'
+  };
 
   try {
     final response = await http
-        .get(uriUrl)
+        .get(uriUrl, headers: header)
         .timeout(const Duration(seconds: 15));
     logger.i("getResponse body: ${response.body}");
     return response.body;
