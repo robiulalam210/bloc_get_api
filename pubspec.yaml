@@ -44,6 +44,25 @@ dependencies:
   shared_preferences: ^2.2.3
   cached_network_image: ^3.3.1
   flutter_sliding_toast: ^1.0.2
+  get: ^4.6.5
+  get_storage: ^2.0.3
+  sms_autofill: ^2.3.0
+  carousel_slider: ^4.1.1
+  shimmer: ^3.0.0
+  auto_reload: ^1.1.0
+  connectivity_plus: ^2.3.9
+  file_picker: ^8.0.5
+  intl:
+  flutter_svg: ^2.0.5
+  dropdown_button2:
+  custom_rich_text: any
+  url_launcher: ^6.1.10
+  open_file: ^3.2.1
+  fast_cached_network_image: ^1.2.0
+  image_picker: ^1.1.2
+  flutter_secure_storage: ^9.2.2
+  app_settings: ^5.1.1
+  flutterzilla_fixed_grid: ^0.0.4
 
 dev_dependencies:
   flutter_test:
@@ -54,7 +73,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
