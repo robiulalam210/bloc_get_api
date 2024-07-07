@@ -18,8 +18,9 @@ Future<String> getResponse({
 
   try {
     final response = await http
-        .get(uriUrl, headers: header)
+        .get(uriUrl)
         .timeout(const Duration(seconds: 15));
+    print("getResponse body: ${response.body}");
     logger.i("getResponse body: ${response.body}");
     return response.body;
   } on TimeoutException {
